@@ -1,4 +1,5 @@
 import './Navbar.css';
+import CartWidget from './CartWidget';
 
 function Navbar() {
   return (
@@ -11,6 +12,7 @@ function Navbar() {
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar Producto" aria-label="Search"></input>
             <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <CartWidget />
           </form>
         </div>
       </nav>
