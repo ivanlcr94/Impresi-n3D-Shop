@@ -3,11 +3,10 @@
     flex-direction: row; 
 }
 
-.botonContador {
-    width: 30px;
-    height: 30px;
+.contador p {
+    margin: 0px 15px 0px 15px;
 }
 
-.contador p {
-    margin: 0px 10px 0px 10px;
+.botonAgregarCarrito {
+    margin: 0px 15px 0px 15px;
 }
