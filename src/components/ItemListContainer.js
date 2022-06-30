@@ -1,5 +1,5 @@
 import './ItemListContainer.css';
-import ItemCount from './ItemCount';
+import ItemList from './ItemList';
 
 function ItemListContainer() {
 
@@ -9,8 +9,9 @@ function ItemListContainer() {
         <h2>Lista de productos</h2>
         <p>Seleccione su producto:</p>
       </section>
-      <ItemCount stockActual="3" />
-      <ItemCount stockActual="7" />
+      
+      <ItemList />
+      
    </>
   );
 }
