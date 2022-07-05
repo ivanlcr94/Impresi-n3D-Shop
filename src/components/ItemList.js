@@ -4,7 +4,7 @@ import Item from './Item';
 
 function ItemList() {
 
-const [info, setInfo] = useState()
+const [info, setInfo] = useState([])
 
    
 useEffect(()=> {
@@ -19,7 +19,7 @@ useEffect(()=> {
   return (
       <section className='container-flex'>
         <div className='row'>
-          {info && info.map(i => <Item nombre={i.nombre} precio={i.precio} />)}
+          {info&&info.map(i => <Item key = {i.id} nombre={i.nombre} precio={i.precio} />)}
         </div>
       </section>
   );

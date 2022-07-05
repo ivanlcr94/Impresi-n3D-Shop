@@ -1,0 +1,21 @@
+.contenedorDetallePorducto {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem 3rem 1rem;
+    padding: 1rem;
+    border: solid 1px rgb(206, 199, 199);
+    border-radius: 10px;
+}
+
+.contenedorDescripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.contenedorDescripcion p {
+    color: rgb(75, 75, 75);
+}

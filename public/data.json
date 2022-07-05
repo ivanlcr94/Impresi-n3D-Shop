@@ -1,5 +1,6 @@
 [{
     "id": 1,
+    "categoria" : "0",
     "nombre": "Dispenser latas de cerveza",
     "precio": 1200,
     "img": ""
@@ -8,41 +9,48 @@
 {
     "id": 2,
     "nombre": "Maseta Machupichu",
+    "categoria" : "0",
     "precio": 1100,
     "img": ""
 },
 {
     "id": 3,
+    "categoria" : "0",
     "nombre": "Repisa octagonal",
     "precio": 1200,
     "img": ""
 },
 {
     "id": 4,
+    "categoria" : "0",
     "nombre": "Porta auricular",
     "precio": 1400,
     "img": ""
 },
 {
     "id": 5,
+    "categoria" : "0",
     "nombre": "Planty Potter",
     "precio": 2000,
     "img": ""
 },
 {
     "id": 6,
+    "categoria" : "0",
     "nombre": "Hexa Line Lamp",
     "precio": 2500,
     "img": ""
 },
 {
     "id": 7,
+    "categoria" : "0",
     "nombre": "Japanese Garden Lantern",
     "precio": 3000,
     "img": ""
 },
 {
     "id": 8,
+    "categoria" : "0",
     "nombre": "Elliptical vase",
     "precio": 1900,
     "img": ""
