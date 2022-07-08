@@ -19,3 +19,5 @@
 .contenedorDescripcion p {
     color: rgb(75, 75, 75);
 }
+
+.imagDetail:hover {filter: opacity(.9);}

@@ -4,7 +4,7 @@ import './ItemCount.css';
 
 function ItemCount(promps) {
 
-    const stock = promps.stockActual;
+    const stock = promps.stock;
 
     const [num, setNum] = useState(0)
 
@@ -30,6 +30,7 @@ function ItemCount(promps) {
     return (
    
         <>   
+            <p>Stock Actual = {promps.stock - num}</p>
             <div className="contador">
                 <button type="button" className="btn btn-light botonContador"  onClick={sumar}>+</button>
                 <p>{num}</p>

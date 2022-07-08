@@ -1,59 +1,75 @@
 [{
     "id": 1,
-    "categoria" : "0",
-    "nombre": "Dispenser latas de cerveza",
-    "precio": 1200,
-    "img": ""
+    "categoria" : "Mates",
+    "nombre": "Mate Impreso En 3d Mandalorian",
+    "precio": 1494,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_855621-MLA46491079218_062021-O.webp",
+    "detalle": "Se entrega con base mate de polímero y bombilla. Medidas: 12 cm de ancho x 9 cm de prof. x 10 cm de alto. Diametro de la boca del mate: 5 cm interior / 8 cm exterior",
+    "stock": 5
 
 },
 {
     "id": 2,
-    "nombre": "Maseta Machupichu",
-    "categoria" : "0",
-    "precio": 1100,
-    "img": ""
+    "categoria" : "Mates",
+    "nombre": "Mate Impreso En 3d Darth Vader Star Wars",
+    "precio": 1600,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_616538-MLA43498444394_092020-O.webp",
+    "detalle": "Se entrega con base mate de polímero y bombilla | Modelo impreso en 3D Material: PLA, biodegradable. Medidas: 13 cm de ancho x 14 cm de prof. x 10 cm de alto. Diametro de la boca del mate: 5 cm interior / 8 cm exterior",
+    "stock": 7
 },
 {
     "id": 3,
-    "categoria" : "0",
-    "nombre": "Repisa octagonal",
-    "precio": 1200,
-    "img": ""
+    "categoria" : "Deco",
+    "nombre": "Velador Luna Llena Impreso 3d Led 16 Colores",
+    "precio": 6500,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_720693-MLA50184297436_062022-O.webp",
+    "detalle": "¿Está buscando algo para agregar al estilo y la decoración de su hogar? ¿Algo que sea verdaderamente único y perfecto como punto focal? Nada encaja mejor que esta lámpara de luna 3D.",
+    "stock": 5
 },
 {
     "id": 4,
-    "categoria" : "0",
-    "nombre": "Porta auricular",
-    "precio": 1400,
-    "img": ""
+    "categoria" : "Juguetes",
+    "nombre": "Baby Groot Sentado Figura Impresa En 3d",
+    "precio": 1149,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_712600-MLA43509537119_092020-O.webp",
+    "detalle": "Modelo impreso en 3D Material: PLA, biodegradable | Medidas: 15 cm de ancho x 8 cm de prof. x 15 cm de alto",
+    "stock": 10
 },
 {
     "id": 5,
-    "categoria" : "0",
-    "nombre": "Planty Potter",
-    "precio": 2000,
-    "img": ""
+    "categoria" : "Juguetes",
+    "nombre": "Martillo Thor Birome - Mjoln Figura Impresa En 3d",
+    "precio": 2500,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_745795-MLA43535131274_092020-O.webp",
+    "detalle": "Modelo Porta Birome - 22CM de Altura - Pintado a mano | Modelo impreso en 3D Material: PLA, biodegradable. Medidas: 15 cm de ancho x 11 cm de prof. x 22 cm de alto",
+    "stock": 20
 },
 {
     "id": 6,
-    "categoria" : "0",
-    "nombre": "Hexa Line Lamp",
+    "categoria" : "Juguetes",
+    "nombre": "Baby Yoda Star Wars Figura Impresa En 3d",
     "precio": 2500,
-    "img": ""
+    "img": "https://http2.mlstatic.com/D_NQ_NP_946691-MLA43254111121_082020-O.webp",
+    "detalle": "Modelo impreso en 3D Material: PLA, biodegradable | Medidas: 18 cm de ancho x 13 cm de prof. x 13 cm de alto",
+    "stock": 5
 },
 {
     "id": 7,
-    "categoria" : "0",
-    "nombre": "Japanese Garden Lantern",
-    "precio": 3000,
-    "img": ""
+    "categoria" : "Deco",
+    "nombre": "Lampara Playstation Impresa En 3d 40 Cm!",
+    "precio": 4000,
+    "img": "https://http2.mlstatic.com/D_NQ_NP_866247-MLA49990459285_052022-O.webp",
+    "detalle": "Esta lámpara viene con toda la electrónica por dentro, tiene una excelente intensidad de luz!. Nuestro diseño es exclusivo, incluye fuente de 12v.",
+    "stock": 4
 },
 {
     "id": 8,
-    "categoria" : "0",
-    "nombre": "Elliptical vase",
+    "categoria" : "Accesorios",
+    "nombre": "Anteojos Gafas Deal With It Meme Impreso En 3d",
     "precio": 1900,
-    "img": ""
+    "img": "https://http2.mlstatic.com/D_NQ_NP_973126-MLA49482213535_032022-O.webp",
+    "detalle": "Impresión 3D de Anteojos Gafas Deal With It Meme Impreso en 3D Regalo Realizada en PLA Con la mejor calidad del Mercado",
+    "stock": 12
 }
 
 ]

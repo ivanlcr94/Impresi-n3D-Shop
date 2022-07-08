@@ -1,7 +1,8 @@
 import './Navbar.css';
 import CartWidget from './CartWidget';
+import { Link , NavLink} from 'react-router-dom'
 
-function Navbar() {
+function Navbar(props) {
   return (
 
     <header>  
@@ -16,7 +17,7 @@ function Navbar() {
     <div className="collapse navbar-collapse listaNav " id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Servicios</a>
@@ -24,14 +25,18 @@ function Navbar() {
         <li className="nav-item">
           <a className="nav-link" href="#">Contacto</a>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/productos">Productos</Link>
+        </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
+            Categorias
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">Herramientas</a></li>
-            <li><a className="dropdown-item" href="#">Juguetes</a></li>
-            <li><a className="dropdown-item" href="#">Deco</a></li>
+            <li><Link className="dropdown-item" to='/categoriasAccesorios'>Accesorios</Link></li>
+            <li><Link className="dropdown-item" to="/categoriasDeco">Deco</Link></li>
+            <li><Link className="dropdown-item" to="categoriasJuguetes">Juguetes</Link></li>
+            <li><Link className="dropdown-item" to="categoriasMates">Mates</Link></li>
           </ul>
         </li>
       </ul>
