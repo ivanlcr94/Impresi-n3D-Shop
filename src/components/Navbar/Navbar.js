@@ -1,5 +1,5 @@
 import './Navbar.css';
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import { Link , NavLink} from 'react-router-dom'
 
 function Navbar(props) {
@@ -7,9 +7,9 @@ function Navbar(props) {
 
     <header>  
 
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow  ">
   <div className="container-fluid">
-  <a className="navbar-brand logo">IMPRESIÓN<span id="logo3d">3D</span> Shop</a>
+  <Link className="navbar-brand logo" to='/'>IMPRESIÓN<span id="logo3d">3D</span> Shop</Link>
   <CartWidget />
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -17,26 +17,18 @@ function Navbar(props) {
     <div className="collapse navbar-collapse listaNav " id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="#">Home</a>
+          <Link className="nav-link" aria-current="page" to="/">Home</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Servicios</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Contacto</a>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/productos">Productos</Link>
-        </li>
+    
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorias
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><Link className="dropdown-item" to='/categoriasAccesorios'>Accesorios</Link></li>
-            <li><Link className="dropdown-item" to="/categoriasDeco">Deco</Link></li>
-            <li><Link className="dropdown-item" to="categoriasJuguetes">Juguetes</Link></li>
-            <li><Link className="dropdown-item" to="categoriasMates">Mates</Link></li>
+            <li><Link className="dropdown-item" to='/categorias/accesorios'>Accesorios</Link></li>
+            <li><Link className="dropdown-item" to="/categorias/deco">Deco</Link></li>
+            <li><Link className="dropdown-item" to="categorias/juguetes">Juguetes</Link></li>
+            <li><Link className="dropdown-item" to="categorias/mates">Mates</Link></li>
           </ul>
         </li>
       </ul>

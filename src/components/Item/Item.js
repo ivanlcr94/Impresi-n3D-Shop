@@ -12,7 +12,7 @@ function Item(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.nombre}</h5>
                     <p className="card-text">Precio: ${props.precio}</p>
-                    <Link to={`/item${props.id}`} className="btn btn-outline-primary">Detalles de producto</Link>
+                    <Link to={`/item/${props.id}`} className="btn btn-outline-primary">Detalles de producto</Link>
                 </div>
             </div>  
           </div>   

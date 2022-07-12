@@ -2,11 +2,11 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import './ItemCount.css';
 
-function ItemCount(promps) {
+function ItemCount({stock, initial, onAdd}) {
 
-    const stock = promps.stock;
+    
 
-    const [num, setNum] = useState(0)
+    const [num, setNum] = useState(initial)
 
      const sumar = () => {
             if(num<stock){
@@ -22,7 +22,7 @@ function ItemCount(promps) {
     }
 
     const restar = () =>{
-            if(num>0){
+            if(num>initial){
             setNum(num - 1)
         }
     }
@@ -30,12 +30,12 @@ function ItemCount(promps) {
     return (
    
         <>   
-            <p>Stock Actual = {promps.stock - num}</p>
+            <p>Stock Actual = {stock - num}</p>
             <div className="contador">
                 <button type="button" className="btn btn-light botonContador"  onClick={sumar}>+</button>
                 <p>{num}</p>
                 <button type="button" className="btn btn-light botonContador"  onClick={restar}>-</button>
-                <button type="button" className="btn btn-outline-primary botonAgregarCarrito">Agregar al carrito</button>
+                <button type="button" className="btn btn-outline-primary botonAgregarCarrito"  onClick={()=>onAdd(num)} >Agregar al carrito</button>
             </div>
         </>
     );

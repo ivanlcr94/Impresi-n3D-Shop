@@ -1,6 +1,6 @@
 [{
     "id": 1,
-    "categoria" : "Mates",
+    "categoria" : "mates",
     "nombre": "Mate Impreso En 3d Mandalorian",
     "precio": 1494,
     "img": "https://http2.mlstatic.com/D_NQ_NP_855621-MLA46491079218_062021-O.webp",
@@ -10,7 +10,7 @@
 },
 {
     "id": 2,
-    "categoria" : "Mates",
+    "categoria" : "mates",
     "nombre": "Mate Impreso En 3d Darth Vader Star Wars",
     "precio": 1600,
     "img": "https://http2.mlstatic.com/D_NQ_NP_616538-MLA43498444394_092020-O.webp",
@@ -19,7 +19,7 @@
 },
 {
     "id": 3,
-    "categoria" : "Deco",
+    "categoria" : "deco",
     "nombre": "Velador Luna Llena Impreso 3d Led 16 Colores",
     "precio": 6500,
     "img": "https://http2.mlstatic.com/D_NQ_NP_720693-MLA50184297436_062022-O.webp",
@@ -28,7 +28,7 @@
 },
 {
     "id": 4,
-    "categoria" : "Juguetes",
+    "categoria" : "juguetes",
     "nombre": "Baby Groot Sentado Figura Impresa En 3d",
     "precio": 1149,
     "img": "https://http2.mlstatic.com/D_NQ_NP_712600-MLA43509537119_092020-O.webp",
@@ -37,7 +37,7 @@
 },
 {
     "id": 5,
-    "categoria" : "Juguetes",
+    "categoria" : "juguetes",
     "nombre": "Martillo Thor Birome - Mjoln Figura Impresa En 3d",
     "precio": 2500,
     "img": "https://http2.mlstatic.com/D_NQ_NP_745795-MLA43535131274_092020-O.webp",
@@ -46,7 +46,7 @@
 },
 {
     "id": 6,
-    "categoria" : "Juguetes",
+    "categoria" : "juguetes",
     "nombre": "Baby Yoda Star Wars Figura Impresa En 3d",
     "precio": 2500,
     "img": "https://http2.mlstatic.com/D_NQ_NP_946691-MLA43254111121_082020-O.webp",
@@ -55,7 +55,7 @@
 },
 {
     "id": 7,
-    "categoria" : "Deco",
+    "categoria" : "deco",
     "nombre": "Lampara Playstation Impresa En 3d 40 Cm!",
     "precio": 4000,
     "img": "https://http2.mlstatic.com/D_NQ_NP_866247-MLA49990459285_052022-O.webp",
@@ -64,7 +64,7 @@
 },
 {
     "id": 8,
-    "categoria" : "Accesorios",
+    "categoria" : "accesorios",
     "nombre": "Anteojos Gafas Deal With It Meme Impreso En 3d",
     "precio": 1900,
     "img": "https://http2.mlstatic.com/D_NQ_NP_973126-MLA49482213535_032022-O.webp",
