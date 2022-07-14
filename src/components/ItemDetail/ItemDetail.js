@@ -1,9 +1,12 @@
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {CartContext} from '../Context/CartContext'
 
 function ItemDetail(props) {
+
+  const {addToCart} = useContext(CartContext);
 
   const [cantidadContador, setCantidadContador] = useState()
   const [contadorVisible, setContadorVisible] = useState()
@@ -12,6 +15,9 @@ function ItemDetail(props) {
   const agregarAlCarrito = (cantidad)=>{
 
     setCantidadContador(cantidad)
+
+    addToCart(props.item, cantidad)
+
     setContadorVisible(false)
     console.log(`Se agrego ${cantidad} al carrito`)
 

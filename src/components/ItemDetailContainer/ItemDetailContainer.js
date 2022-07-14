@@ -19,7 +19,7 @@ function ItemDetailContainer() {
   
   return (
     <> 
-     {item&&<ItemDetail nombre={item.nombre} detalle={item.detalle} img={item.img} precio={item.precio} stock={item.stock} />}
+     {item&&<ItemDetail nombre={item.nombre} detalle={item.detalle} img={item.img} precio={item.precio} stock={item.stock} item={item} />}
    </>
   );
 }
