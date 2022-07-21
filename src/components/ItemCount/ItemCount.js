@@ -31,7 +31,7 @@ function ItemCount({stock, initial, onAdd}) {
     return (
    
         <>   
-            <p>Stock Actual = {stock - num}</p>
+            <p>{(stock - num > 1 ? stock - num + " disponibles" : stock - num + " disponible" )}  </p>
             <div className="contador">
                 <button type="button" className="btn btn-light botonContador"  onClick={sumar}>+</button>
                 <p>{num}</p>

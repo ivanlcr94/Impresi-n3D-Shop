@@ -13,7 +13,7 @@ function ItemDetailContainer() {
 
   useEffect(()=> {
     fetch("/data.json")
-    .then((resps) => resps.json())
+    .then((resps) => resps.json())   
     .then((data) => setItem((params.id ? data.find(elemento => elemento.id == params.id): data)))
   }, [params.id])
   

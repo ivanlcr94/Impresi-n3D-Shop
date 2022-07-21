@@ -1,5 +1,25 @@
 .botonCarrito {
-    
+    color: gray;
     margin-left: 0px;   
     margin-right: 50px;
+}
+
+.carritoCompras{
+    color: gray;
+    position: relative;
+}
+
+.cantidadCarrito{
+    position: absolute;
+  top: 0;
+  left: 55%;
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px;
 }
