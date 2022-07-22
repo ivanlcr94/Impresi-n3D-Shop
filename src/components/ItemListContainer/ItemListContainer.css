@@ -1,3 +1,7 @@
 .contenedorItems {
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
     padding: 5rem 0rem 5rem 0rem ;
+    
 }

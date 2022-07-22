@@ -6,8 +6,8 @@ function Item(props) {
 
   return (
     <>
-          <div className='col-12 col-md-6 col-lg-4 justify-content-center align-items-center contenedorCard'> 
-            <div className="card shadow mx-auto m-5 itemCard ">
+          <div className=' container col-12 col-md-6 col-lg-4  contenedorCard'> 
+            <div className="card shadow  m-5 itemCard ">
                 <img src={props.img} className="card-img-top imagenCard " />
                 <div className="card-body">
                     <h5 className="card-title">{props.nombre}</h5>

@@ -10,11 +10,8 @@
 }
 
 
-
-
 .contenedorCard:hover .itemCard {
     -webkit-transform:scale(0.9);transform:scale(1.1);
     transition-duration: 1s;
     box-shadow: rgb(0, 81, 255) 1px; 
 }
-
