@@ -3,13 +3,12 @@ import './Cart.css';
 import { useContext } from 'react';
 import {CartContext} from '../Context/CartContext'
 import Card from './Card';
+import FromOrder from '../FormOrder/FromOrder';
+import ModalForm from '../FormOrder/ModalForm';
 
 function Cart() {
 
-  const {cart} = useContext(CartContext);
-  const {removeFromCart} = useContext(CartContext);
-  const {clearCart} = useContext(CartContext);
-  const {getTotal} = useContext(CartContext);
+  const {cart,removeFromCart,clearCart,getTotal} = useContext(CartContext);
 
 
   return (
@@ -38,16 +37,26 @@ function Cart() {
         </div>
       </div> 
 
-      <div className='container d-flex justify-content-end align-items-center shadow contenedorTotalCompra'>
-        <div className='row'>
-          <div className='col-12'>
-            <h4>Total de la compra ${getTotal()}</h4>     
-          </div>
-        </div>
+       {cart.length > 0 ? (
 
-      </div>   
+          <div className='container d-flex justify-content-end align-items-center shadow contenedorTotalCompra'>
+            <div className='row'>
+              <div className='col-12 d-flex justify-content-center'>
+                <h4>Total de la compra ${getTotal()}</h4>     
+              </div>
+              <div className='col-12 d-flex justify-content-center mt-3'> 
+                <button className="btn btn-success">Finalizar la compra</button>
+              </div> 
+            </div>
+          </div>   
 
-   </div>
+       ) : (
+       ""
+       )}           
+    </div>
+
+    <FromOrder></FromOrder>
+
     </>
     
   );
