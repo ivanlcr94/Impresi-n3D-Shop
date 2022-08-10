@@ -14,7 +14,7 @@ function Card(props) {
 
                 <div className='col-8 col-md-6 col-lg-5 p-2'>
                     <h5 className="card-title">{props.nombre}</h5>
-                    <p className="card-title">{props.cantidad} Unidades</p>
+                    <p className="card-title">{props.cantidad > 1 ? props.cantidad + " Unidades" : props.cantidad + " Unidad"}</p>
                 </div>
 
                 <div className='col-8 col-md-3 col-lg-2 contenedorPrecio'>

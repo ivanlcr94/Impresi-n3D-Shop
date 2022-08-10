@@ -10,7 +10,7 @@ function ItemCount({stock, initial, onAdd}) {
     const [num, setNum] = useState(initial)
 
      const sumar = () => {
-            if(num<stock){
+        if(num<stock){
             setNum(num + 1)
         } else{
             Swal.fire({

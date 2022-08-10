@@ -1,6 +1,6 @@
 import './Navbar.css';
 import CartWidget from '../CartWidget/CartWidget';
-import { Link , NavLink} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Navbar(props) {
   return (
@@ -9,10 +9,10 @@ function Navbar(props) {
 
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow  ">
       <div className="container-fluid">
-      <Link className="navbar-brand logo" to='/'>IMPRESIÓN<span id="logo3d">3D</span> Shop</Link>
-      <CartWidget />
+        <Link className="navbar-brand logo" to='/'>IMPRESIÓN<span id="logo3d">3D</span> Shop</Link>
+        <CartWidget />
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse listaNav " id="navbarNavDropdown">
           <ul className="navbar-nav">
@@ -32,7 +32,6 @@ function Navbar(props) {
               </ul>
             </li>
           </ul>
-          
         </div>
       </div>
     </nav> 

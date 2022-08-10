@@ -2,11 +2,13 @@ import {useState} from 'react'
 import { useContext } from 'react';
 import {CartContext} from '../Context/CartContext';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import Swal from "sweetalert2";
+import Spinner from '../Spinner/Spinner';
 
 
 function FromOrder() {
 
-    const {cart,removeFromCart,clearCart,getTotal} = useContext(CartContext);  
+    const {cart,clearCart,getTotal} = useContext(CartContext);  
 
     const [name, setName] = useState("")
     const [lastName, setLastName] = useState("")
@@ -60,6 +62,8 @@ function FromOrder() {
     setPhone("")
     setEmail("")
 
+    
+
    }
 
     
@@ -67,10 +71,12 @@ function FromOrder() {
   return (
     <>
      <div className="container">
+
+        { newOrderId === ""?
             <form onSubmit={submitHandler} className="row" >
                 <div className="col-8 col-md-9 col-lg-9 formularioContacto justify-content-center align-items-center"/>
                     <div>
-                        <h2>Información de contacto</h2>
+                        <h2 id="formularioCompra">Información de contacto</h2>
                         
                     </div>
                     <div className="form-floating mb-3 p-1">
@@ -91,12 +97,38 @@ function FromOrder() {
                     </div>
                     <p>Por favor complete el formulario con sus datos para terminar la compra.</p>
                     <div className="col-12 d-flex justify-content-end m-2 buttonFormulario">
-                        <button className="btn btn-success" type="submit" >Enviar</button>
+                        <button className="btn btn-success" type="submit" >COMPRAR</button>
                     </div>
                 
             </form>
-        </div>
+        :
 
+        Swal.fire({
+            title: 'Compra Finalizada con exito!',
+            text: `Tu orden de compra es: ${newOrderId} `,
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'Volver a pagina de inicio'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                text: `Gracias por comprar en IMPRESIÓN3D.`,
+                footer: "Redirigiendo a  la pagina de inicio...",  
+                showConfirmButton: false,
+                timer: 4000,
+                allowOutsideClick: false
+              }).then(() => {
+                <Spinner/>
+                return (window.location.href = "/");
+              });
+            }
+          }) 
+
+          (clearCart())
+    
+    }
+        
+        </div>
 
     </>
  

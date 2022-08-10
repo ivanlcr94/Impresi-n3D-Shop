@@ -2,7 +2,8 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
-import { getFirestore, doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+import Spinner from '../Spinner/Spinner';
 
 function ItemListContainer() {
 
@@ -13,25 +14,23 @@ useEffect(() => {
 
   const db = getFirestore();
 
-  const productsRef = collection(db, "products")
+  const q = query(collection(db, "products"), params.id ? where("categoria", "==", params.id) : where("categoria", "!=", "") );
 
-  getDocs(productsRef).then((snapshot) => {
-
-      const filtroCategorias = snapshot.docs.map((doc) => doc.data())
-
-      setInfo(params.id ? filtroCategorias.filter(elemento => elemento.categoria == params.id): filtroCategorias)
-    
-  })
+  getDocs(q).then((snapshot) => {
+  setInfo(snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()})))
+    })
 
 },[params.id] )
 
 
   return (
-      <section className='container  contenedorItems'>
-        
-          <ItemList items={info}/>
-      
-      </section>
+
+    <>
+    {info.length == 0 ? 
+    <Spinner/> 
+    : 
+    <ItemList items={info}/> }
+    </>  
   );
 }
 

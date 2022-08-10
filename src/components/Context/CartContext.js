@@ -6,9 +6,6 @@ export const CartContext = createContext({
 
 const {Provider} = CartContext;
 
-
-
-
 export const CartProvider = ({defaultValue = [], children}) => {
 
     const [cart, setCart] = useState(defaultValue);
@@ -53,21 +50,21 @@ export const CartProvider = ({defaultValue = [], children}) => {
         setCart(newCart);
     }
 
-    //cantidad total de productos,
-  const getQuantity = () => {
-    let cantidad = 0;
-    cart.forEach((item) => (cantidad = cantidad + item.quantity));
-    return cantidad;
-  };
+    //cantidad total de productos
+    const getQuantity = () => {
+        let cantidad = 0;
+        cart.forEach((item) => (cantidad = cantidad + item.quantity));
+        return cantidad;
+    };
 
-  //Multiplicar precio segun al cantidad
-  const getTotal = () => {
-    let total = 0;
-    cart.forEach((item) => {
-      total = total + item.quantity * item.item.precio;
-    });
-    return Intl.NumberFormat("es-AR").format(total);
-  };
+    //Multiplicar precio segun al cantidad
+    const getTotal = () => {
+        let total = 0;
+        cart.forEach((item) => {
+        total = total + item.quantity * item.item.precio;
+        });
+        return Intl.NumberFormat("es-AR").format(total);
+    };
 
     const context = {
         cart,
